@@ -12,8 +12,8 @@ from ciscoconfparse import CiscoConfParse
 # Configure logging so it goes to a .log file next to this script.
 import logging
 this_script_dir = os.path.dirname(os.path.realpath(__file__))
-log_file = f"log/exercise2.log"
-logging.basicConfig(filename=log_file, encoding='utf-8', level=logging.DEBUG)
+log_file = f"{this_script_dir}/log/exercise2.log"
+logging.basicConfig(filename=log_file, encoding='utf-8', level=logging.DEBUG, filemode="w")
 
 # Configure a global variables to store things like
 # our known BGP key.
