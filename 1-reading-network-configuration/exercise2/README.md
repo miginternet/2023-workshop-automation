@@ -11,6 +11,9 @@ To complete this exercise, all TODOs must be completed in both scripts and one i
 If done successfully, both scripts can be run in sequential order. They will output results as they run.
 
 ```
+From the 2023-workshop-automation folder:
+
+cd 1-reading-network-configuration/exercise2
 python 1_create_network_structured_data.py
 python 2_add_customers_to_interfaces.py
 ```
