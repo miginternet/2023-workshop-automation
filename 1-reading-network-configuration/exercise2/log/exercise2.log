@@ -1,0 +1,1299 @@
+DEBUG:paramiko.transport:starting thread (client mode): 0x5eead910
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_3.1.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-OpenSSH_8.0 PKIX[12.1]
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_8.0)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group16-sha512, diffie-hellman-group14-sha1, diffie-hellman-group14-sha256
+DEBUG:paramiko.transport:server key: ecdsa-sha2-nistp256, ecdsa-sha2-nistp384, ecdsa-sha2-nistp521, ssh-ed25519, ssh-rsa, rsa-sha2-256, rsa-sha2-512, ssh-dss
+DEBUG:paramiko.transport:client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+DEBUG:paramiko.transport:server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+DEBUG:paramiko.transport:client mac: hmac-sha2-512, hmac-sha2-256, hmac-sha1
+DEBUG:paramiko.transport:server mac: hmac-sha2-512, hmac-sha2-256, hmac-sha1
+DEBUG:paramiko.transport:client compress: none, zlib@openssh.com
+DEBUG:paramiko.transport:server compress: none, zlib@openssh.com
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: curve25519-sha256@libssh.org
+DEBUG:paramiko.transport:HostKey: ssh-ed25519
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Got EXT_INFO: {'publickey-algorithms@roumenpetrov.info': b'x509v3-ecdsa-sha2-nistp256,x509v3-ecdsa-sha2-nistp384,x509v3-ecdsa-sha2-nistp521,x509v3-ssh-rsa,x509v3-ssh-dss,ssh-rsa', 'server-sig-algs': b'x509v3-ecdsa-sha2-nistp256,x509v3-ecdsa-sha2-nistp384,x509v3-ecdsa-sha2-nistp521,x509v3-ssh-rsa,x509v3-ssh-dss,ssh-rsa'}
+DEBUG:paramiko.transport:Adding ssh-ed25519 host key for 172.16.4.2: b'905f2110464e811959378a9c18b1bee2'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:Received global request "hostkeys-00@openssh.com"
+DEBUG:paramiko.transport:Rejecting "hostkeys-00@openssh.com" global request from server.
+DEBUG:paramiko.transport:Debug msg: b'AUTH: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding'
+DEBUG:paramiko.transport:[chan 0] Max packet out: 32768 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: Last login: Fri May  5 00:53:49 2023 from 172.16.4.1
+
+
+
+
+RP/0/RP0/CPU0:cisco1#
+
+RP/0/RP0/CPU0:cisco1#
+DEBUG:netmiko:Pattern found: ([>#]) Last login: Fri May  5 00:53:49 2023 from 172.16.4.1
+
+
+
+
+RP/0/RP0/CPU0:cisco1#
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: terminal width 511
+
+Fri May  5 01:15:50.068 UTC
+
+DEBUG:netmiko:Pattern found: (terminal width 511) 
+
+RP/0/RP0/CPU0:cisco1#terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: terminal length 0
+
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+
+Fri May  5 01:15:50.068 UTC
+terminal length 0
+DEBUG:netmiko:
+
+Fri May  5 01:15:50.068 UTC
+terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: RP/0/RP0/CPU0:cisco1#terminal length 0
+
+
+DEBUG:netmiko:Pattern found: ([>#]) 
+RP/0/RP0/CPU0:cisco1#
+DEBUG:netmiko:read_channel: Fri May  5 01:15:50.112 UTC
+
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: RP/0/RP0/CPU0:cisco1#
+
+RP/0/RP0/CPU0:cisco1#
+DEBUG:netmiko:Pattern found: (\#|>) 
+RP/0/RP0/CPU0:cisco1#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is RP/0/RP0/CPU0:cisco1#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+
+RP/0/RP0/CPU0:cisco1#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is RP/0/RP0/CPU0:cisco1#
+DEBUG:netmiko:write_channel: b'show run hostname\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: show run hostname
+
+Fri May  5 01:15:50.248 UTC
+
+DEBUG:netmiko:Pattern found: (show\ run\ hostname) show run hostname
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: hostname cisco1
+
+
+DEBUG:netmiko:read_channel: RP/0/RP0/CPU0:cisco1#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+
+RP/0/RP0/CPU0:cisco1#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is RP/0/RP0/CPU0:cisco1#
+DEBUG:netmiko:write_channel: b'show version | i ^ Version\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: show version | i ^ Version
+
+Fri May  5 01:15:50.407 UTC
+
+DEBUG:netmiko:Pattern found: (show\ version\ \|\ i\ \^\ Version) show version | i ^ Version
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel:  Version      : 7.9.1
+RP/0/RP0/CPU0:cisco1#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+
+RP/0/RP0/CPU0:cisco1#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is RP/0/RP0/CPU0:cisco1#
+DEBUG:netmiko:write_channel: b'show ip bgp summary\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: show ip bgp summary
+
+Fri May  5 01:15:50.514 UTC
+
+DEBUG:netmiko:Pattern found: (show\ ip\ bgp\ summary) show ip bgp summary
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: BGP router identifier 198.51.100.1, local AS number 64500
+BGP generic scan interval 60 secs
+Non-stop routing is enabled
+BGP table state: Active
+Table ID: 0xe0000000   RD version: 10
+BGP main routing table version 10
+BGP NSR Initial initsync version 9 (Reached)
+BGP NSR/ISSU Sync-Group versions 0/0
+BGP scan interval 60 secs
+
+BGP is operating in STANDALONE mode.
+
+
+Process       RcvTblVer   bRIB/RIB   LabelVer  ImportVer  SendTblVer  StandbyVer
+Speaker              10         10         10         10          10           0
+
+Neighbor        Spk    AS MsgRcvd MsgSent   TblVer  InQ OutQ  Up/Down  St/PfxRcd
+198.51.100.2      0 64501     372     334       10    0    0 02:45:28          5
+
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: RP/0/RP0/CPU0:cisco1#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+
+RP/0/RP0/CPU0:cisco1#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is RP/0/RP0/CPU0:cisco1#
+DEBUG:netmiko:write_channel: b'show run\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: show run
+
+Fri May  5 01:15:50.809 UTC
+
+DEBUG:netmiko:Pattern found: (show\ run) show run
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: Building configuration...
+!! IOS XR Configuration 7.9.1
+!! Last configuration change at Thu May  4 22:29:56 2023 by ZTP
+!
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: hostname cisco1
+username clab
+ group root-lr
+ group cisco-support
+ secret 10 $6$7/293.lG/gI3....$qhqRPSKeGBilG47Ii/xlYF9xJVR1IK7bnw.7HHiVj4Aj8cb58bxiLAim8Xz.beUfJ6TQTP3vHUty3UO.4KmaL.
+!
+cdp
+grpc
+ no-tls
+ address-family dual
+!
+line default
+ transport input ssh
+!
+call-home
+ service active
+ contact smart-licensing
+ profile CiscoTAC-1
+  active
+  destination transport-method email disable
+  destination transport-method http
+ !
+!
+netconf-yang agent
+ ssh
+!
+interface Loopback1
+ description PEER_A_NETWORK
+ ipv4 address 10.0.1.1 255.255.255.0
+!
+interface MgmtEth0/RP0/CPU0/0
+ ipv4 address 172.16.4.2 255.255.255.0
+ ipv6 address 2001:db8:16:4::2/80
+!
+interface GigabitEthernet0/0/0/0
+ description NOT_IN_USE
+ shutdown
+!
+interface GigabitEthernet0/0/0/1
+ description foobar
+ ipv4 address 172.17.1.16 255.255.255.254
+!
+interface GigabitEthernet0/0/0/1.100
+ description bar to foo
+ ipv4 address 198.51.100.1 255.255.255.0
+ encapsulation dot1q 100
+!
+interface GigabitEthernet0/0/0/1.200
+ description foo to biz
+ ipv4 address 192.0.2.1 255.255.255.0
+ encapsulation dot1q 200
+!
+interface GigabitEthernet0/0/0/2
+ description NOT_IN_USE
+ shutdown
+!
+route-policy PERMIT_ALL
+  pass
+end-policy
+!
+router static
+ address-family ipv4 unicast
+  0.0.0.0/0 MgmtEth0/RP0/CPU0/0 172.16.4.1
+ !
+ address-family ipv6 unicast
+  ::/0 MgmtEth0/RP0/CPU0/0 2001:db8:16:4::1
+ !
+!
+router bgp 64500
+ bgp router-id 198.51.100.1
+ address-family ipv4 unicast
+  redistribute connected
+ !
+ neighbor-group PEER_B
+  remote-as 64501
+  ebgp-multihop 2
+  password encrypted 15140403062B39
+  update-source GigabitEthernet0/0/0/1.100
+  address-family ipv4 unicast
+   route-policy PERMIT_ALL in
+   route-policy PERMIT_ALL out
+  !
+ !
+ neighbor 198.51.100.2
+  use neighbor-group PEER_B
+ !
+!
+xml agent tty
+ iteration off
+!
+lldp
+!
+ssh server v2
+ssh server netconf vrf default
+end
+
+
+DEBUG:netmiko:read_channel: RP/0/RP0/CPU0:cisco1#
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+RP/0/RP0/CPU0:cisco1#
+DEBUG:netmiko:Pattern found: ([#\$]) 
+
+RP/0/RP0/CPU0:cisco1#
+DEBUG:netmiko:write_channel: b'exit\n'
+DEBUG:paramiko.transport:starting thread (client mode): 0x5dcccb50
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_3.1.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-OpenSSH_8.0 PKIX[12.1]
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_8.0)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group16-sha512, diffie-hellman-group14-sha1, diffie-hellman-group14-sha256
+DEBUG:paramiko.transport:server key: ecdsa-sha2-nistp256, ecdsa-sha2-nistp384, ecdsa-sha2-nistp521, ssh-ed25519, ssh-rsa, rsa-sha2-256, rsa-sha2-512, ssh-dss
+DEBUG:paramiko.transport:client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+DEBUG:paramiko.transport:server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+DEBUG:paramiko.transport:client mac: hmac-sha2-512, hmac-sha2-256, hmac-sha1
+DEBUG:paramiko.transport:server mac: hmac-sha2-512, hmac-sha2-256, hmac-sha1
+DEBUG:paramiko.transport:client compress: none, zlib@openssh.com
+DEBUG:paramiko.transport:server compress: none, zlib@openssh.com
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: curve25519-sha256@libssh.org
+DEBUG:paramiko.transport:HostKey: ssh-ed25519
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-ed25519 host key for 172.16.4.3: b'6ddc37c162445ec41255a6a8cb0c4874'
+DEBUG:paramiko.transport:Got EXT_INFO: {'publickey-algorithms@roumenpetrov.info': b'x509v3-ecdsa-sha2-nistp256,x509v3-ecdsa-sha2-nistp384,x509v3-ecdsa-sha2-nistp521,x509v3-ssh-rsa,x509v3-ssh-dss,ssh-rsa', 'server-sig-algs': b'x509v3-ecdsa-sha2-nistp256,x509v3-ecdsa-sha2-nistp384,x509v3-ecdsa-sha2-nistp521,x509v3-ssh-rsa,x509v3-ssh-dss,ssh-rsa'}
+DEBUG:paramiko.transport:userauth is OK
+DEBUG:paramiko.transport:EOF in transport thread
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:Received global request "hostkeys-00@openssh.com"
+DEBUG:paramiko.transport:Rejecting "hostkeys-00@openssh.com" global request from server.
+DEBUG:paramiko.transport:Debug msg: b'AUTH: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding'
+DEBUG:paramiko.transport:[chan 0] Max packet out: 32768 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: Last login: Fri May  5 00:53:50 2023 from 172.16.4.1
+
+
+
+
+RP/0/RP0/CPU0:cisco2#
+
+RP/0/RP0/CPU0:cisco2#
+DEBUG:netmiko:Pattern found: ([>#]) Last login: Fri May  5 00:53:50 2023 from 172.16.4.1
+
+
+
+
+RP/0/RP0/CPU0:cisco2#
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: terminal width 511
+
+Fri May  5 01:15:51.234 UTC
+
+DEBUG:netmiko:Pattern found: (terminal width 511) 
+
+RP/0/RP0/CPU0:cisco2#terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: terminal length 0
+
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+
+Fri May  5 01:15:51.234 UTC
+terminal length 0
+DEBUG:netmiko:
+
+Fri May  5 01:15:51.234 UTC
+terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: RP/0/RP0/CPU0:cisco2#terminal length 0
+
+Fri May  5 01:15:51.285 UTC
+
+DEBUG:netmiko:Pattern found: ([>#]) 
+RP/0/RP0/CPU0:cisco2#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+RP/0/RP0/CPU0:cisco2#
+
+RP/0/RP0/CPU0:cisco2#
+DEBUG:netmiko:Pattern found: (\#|>) 
+RP/0/RP0/CPU0:cisco2#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is RP/0/RP0/CPU0:cisco2#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+
+RP/0/RP0/CPU0:cisco2#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is RP/0/RP0/CPU0:cisco2#
+DEBUG:netmiko:write_channel: b'show run hostname\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: show run hostname
+
+Fri May  5 01:15:51.412 UTC
+
+DEBUG:netmiko:Pattern found: (show\ run\ hostname) show run hostname
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: hostname cisco2
+
+
+DEBUG:netmiko:read_channel: RP/0/RP0/CPU0:cisco2#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+
+RP/0/RP0/CPU0:cisco2#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is RP/0/RP0/CPU0:cisco2#
+DEBUG:netmiko:write_channel: b'show version | i ^ Version\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: show version | i ^ Version
+
+Fri May  5 01:15:51.568 UTC
+
+DEBUG:netmiko:Pattern found: (show\ version\ \|\ i\ \^\ Version) show version | i ^ Version
+DEBUG:netmiko:read_channel:  Version      : 7.9.1
+
+DEBUG:netmiko:read_channel: RP/0/RP0/CPU0:cisco2#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+
+RP/0/RP0/CPU0:cisco2#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is RP/0/RP0/CPU0:cisco2#
+DEBUG:netmiko:write_channel: b'show ip bgp summary\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: show ip bgp summary
+
+Fri May  5 01:15:51.677 UTC
+
+DEBUG:netmiko:Pattern found: (show\ ip\ bgp\ summary) show ip bgp summary
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: % BGP instance 'default' not active
+
+DEBUG:netmiko:read_channel: RP/0/RP0/CPU0:cisco2#
+INFO:root:Cannot format output for "show ip bgp summary". BGP may not be running? Raw output:\nFri May  5 01:15:51.677 UTC\n% BGP instance 'default' not active
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+
+RP/0/RP0/CPU0:cisco2#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is RP/0/RP0/CPU0:cisco2#
+DEBUG:netmiko:write_channel: b'show run\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: show run
+
+Fri May  5 01:15:51.812 UTC
+
+DEBUG:netmiko:Pattern found: (show\ run) show run
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: Building configuration...
+!! IOS XR Configuration 7.9.1
+!! Last configuration change at Thu May  4 22:29:56 2023 by ZTP
+!
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: hostname cisco2
+username clab
+ group root-lr
+ group cisco-support
+ secret 10 $6$7/293.lG/gI3....$qhqRPSKeGBilG47Ii/xlYF9xJVR1IK7bnw.7HHiVj4Aj8cb58bxiLAim8Xz.beUfJ6TQTP3vHUty3UO.4KmaL.
+!
+cdp
+grpc
+ no-tls
+ address-family dual
+!
+line default
+ transport input ssh
+!
+call-home
+ service active
+ contact smart-licensing
+ profile CiscoTAC-1
+  active
+  destination transport-method email disable
+  destination transport-method http
+ !
+!
+netconf-yang agent
+ ssh
+!
+interface MgmtEth0/RP0/CPU0/0
+ ipv4 address 172.16.4.3 255.255.255.0
+ ipv6 address 2001:db8:16:4::3/80
+!
+interface GigabitEthernet0/0/0/0
+ shutdown
+!
+interface GigabitEthernet0/0/0/1
+ shutdown
+!
+interface GigabitEthernet0/0/0/2
+ shutdown
+!
+router static
+ address-family ipv4 unicast
+  0.0.0.0/0 MgmtEth0/RP0/CPU0/0 172.16.4.1
+ !
+ address-family ipv6 unicast
+  ::/0 MgmtEth0/RP0/CPU0/0 2001:db8:16:4::1
+ !
+!
+xml agent tty
+ iteration off
+!
+lldp
+!
+ssh server v2
+ssh server netconf vrf default
+end
+
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: RP/0/RP0/CPU0:cisco2#
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+RP/0/RP0/CPU0:cisco2#
+DEBUG:netmiko:Pattern found: ([#\$]) 
+
+RP/0/RP0/CPU0:cisco2#
+DEBUG:netmiko:write_channel: b'exit\n'
+DEBUG:paramiko.transport:starting thread (client mode): 0x5dcd6520
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_3.1.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-OpenSSH_7.5
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.5)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, diffie-hellman-group14-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa, rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ecdsa-sha2-nistp384, ecdsa-sha2-nistp521, ssh-ed25519
+DEBUG:paramiko.transport:client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+DEBUG:paramiko.transport:server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+DEBUG:paramiko.transport:client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEBUG:paramiko.transport:server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEBUG:paramiko.transport:client compress: none, zlib@openssh.com
+DEBUG:paramiko.transport:server compress: none, zlib@openssh.com
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: curve25519-sha256@libssh.org
+DEBUG:paramiko.transport:HostKey: ssh-ed25519
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521'}
+DEBUG:paramiko.transport:Adding ssh-ed25519 host key for 172.16.4.4: b'd49eab25391e161ac901ec335a81c442'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:Received global request "hostkeys-00@openssh.com"
+DEBUG:paramiko.transport:Rejecting "hostkeys-00@openssh.com" global request from server.
+DEBUG:paramiko.transport:[chan 0] Max packet out: 32768 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:netmiko:read_channel: 
+clab@juniper1> 
+
+clab@juniper1> 
+DEBUG:netmiko:Pattern found: ([%>$#]) 
+clab@juniper1>
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Pattern found: ([%>$#])  
+
+clab@juniper1>
+DEBUG:netmiko:write_channel: b'set cli screen-width 511\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+clab@juniper1> set cli screen-width 511 
+Screen width set to 511
+
+clab@juniper1> 
+DEBUG:netmiko:Pattern found: (Screen width set to)  
+
+clab@juniper1> set cli screen-width 511 
+Screen width set to
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: set cli complete-on-space off
+
+DEBUG:netmiko:write_channel: b'set cli complete-on-space off\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: set cli complete-on-space off 
+Disabling complete-on-space
+
+clab@juniper1> 
+DEBUG:netmiko:Pattern found: (set\ cli\ complete\-on\-space\ off)  511
+
+clab@juniper1> set cli complete-on-space off
+DEBUG:netmiko: 511
+
+clab@juniper1> set cli complete-on-space off
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: set cli screen-length 0
+
+DEBUG:netmiko:write_channel: b'set cli screen-length 0\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: set cli screen-length 0 
+Screen length set to 0
+
+clab@juniper1> 
+DEBUG:netmiko:Pattern found: (set\ cli\ screen\-length\ 0)  
+Disabling complete-on-space
+
+clab@juniper1> set cli screen-length 0
+DEBUG:netmiko: 
+Disabling complete-on-space
+
+clab@juniper1> set cli screen-length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+clab@juniper1> 
+DEBUG:netmiko:Pattern found: (\#|>) 
+
+clab@juniper1>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is clab@juniper1>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+
+clab@juniper1> 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is clab@juniper1>
+DEBUG:netmiko:write_channel: b'show version | display json\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: show version | display json 
+{
+    "software-information" : [
+    {
+        "host-name" : [
+        {
+            "data" : "juniper1"
+        }
+        ], 
+        "product-model" : [
+        {
+            "data" : "cRPD"
+        }
+        ], 
+        "product-name" : [
+        {
+            "data" : "crpd"
+        }
+        ], 
+        "junos-version" : [
+        {
+            "data" : "23.1R1.8"
+        }
+        ], 
+        "package-information" : [
+        {
+            "name" : [
+            {
+                "data" : "container package version"
+            }
+            ], 
+            "comment" : [
+            {
+                "data" : "cRPD package version : 23.1R1.8 built by builder on 2023-03-19 06:20:36 UTC"
+            }
+            ]
+        }
+        ]
+    }
+    ]
+}
+
+clab@juniper1> 
+DEBUG:netmiko:Pattern found: (show\ version\ \|\ display\ json) show version | display json
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+
+clab@juniper1> 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is clab@juniper1>
+DEBUG:netmiko:write_channel: b'show version | display json\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: show version | display json 
+{
+    "software-information" : [
+    {
+        "host-name" : [
+        {
+            "data" : "juniper1"
+        }
+        ], 
+        "product-model" : [
+        {
+            "data" : "cRPD"
+        }
+        ], 
+        "product-name" : [
+        {
+            "data" : "crpd"
+        }
+        ], 
+        "junos-version" : [
+        {
+            "data" : "23.1R1.8"
+        }
+        ], 
+        "package-information" : [
+        {
+            "name" : [
+            {
+                "data" : "container package version"
+            }
+            ], 
+            "comment" : [
+            {
+                "data" : "cRPD package version : 23.1R1.8 built by builder on 2023-03-19 06:20:36 UTC"
+            }
+            ]
+        }
+        ]
+    }
+    ]
+}
+
+clab@juniper1> 
+DEBUG:netmiko:Pattern found: (show\ version\ \|\ display\ json) show version | display json
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+
+clab@juniper1> 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is clab@juniper1>
+DEBUG:netmiko:write_channel: b'show bgp neighbor | display json\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: show bgp neighbor | display json 
+{
+    "bgp-information" : [
+    {
+        "attributes" : {"xmlns" : "http://xml.juniper.net/junos/23.1R0/junos-routing"}, 
+        "bgp-peer" : [
+        {
+            "attributes" : {"junos:style" : "detail"}, 
+            "peer-address" : [
+            {
+                "data" : "198.51.100.1+48283"
+            }
+            ], 
+            "peer-as" : [
+            {
+                "data" : "64500"
+            }
+            ], 
+            "local-address" : [
+            {
+                "data" : "198.51.100.2+179"
+            }
+            ], 
+            "local-as" : [
+            {
+                "data" : "64501"
+            }
+            ], 
+            "peer-group" : [
+            {
+                "data" : "PEER_A"
+            }
+            ], 
+            "peer-cfg-rti" : [
+            {
+                "data" : "master"
+            }
+            ], 
+            "peer-fwd-rti" : [
+            {
+                "data" : "master"
+            }
+            ], 
+            "peer-type" : [
+            {
+                "data" : "External"
+            }
+            ], 
+            "peer-state" : [
+            {
+                "data" : "Established"
+            }
+            ], 
+            "peer-flags" : [
+            {
+                "data" : "Sync"
+            }
+            ], 
+            "rsync-flags" : [
+            {
+            }
+            ], 
+            "last-state" : [
+            {
+                "data" : "OpenConfirm"
+            }
+            ], 
+            "last-event" : [
+            {
+                "data" : "RecvKeepAlive"
+            }
+            ], 
+            "last-error" : [
+            {
+                "data" : "None"
+            }
+            ], 
+            "bgp-option-information" : [
+            {
+                "export-policy" : [
+                {
+                    "data" : "PERMIT_ALL"
+                }
+                ], 
+                "import-policy" : [
+                {
+                    "data" : "PERMIT_ALL"
+                }
+                ], 
+                "bgp-options" : [
+                {
+                    "data" : "Multihop AuthKey PeerAS Refresh"
+                }
+                ], 
+                "bgp-options2" : [
+                {
+                }
+                ], 
+                "bgp-options-extended" : [
+                {
+                    "data" : "GracefulShutdownRcv"
+                }
+                ], 
+                "bgp-options-extended2" : [
+                {
+                }
+                ], 
+                "authentication-configured" : [
+                {
+                    "data" : [null]
+                }
+                ], 
+                "holdtime" : [
+                {
+                    "data" : "90"
+                }
+                ], 
+                "preference" : [
+                {
+                    "data" : "170"
+                }
+                ], 
+                "gshut-recv-local-preference" : [
+                {
+                    "data" : "0"
+                }
+                ]
+            }
+            ], 
+            "flap-count" : [
+            {
+                "data" : "0"
+            }
+            ], 
+            "recv-ebgp-origin-validation-state" : [
+            {
+                "data" : "Reject"
+            }
+            ], 
+            "peer-id" : [
+            {
+                "data" : "198.51.100.1"
+            }
+            ], 
+            "local-id" : [
+            {
+                "data" : "198.51.100.2"
+            }
+            ], 
+            "active-holdtime" : [
+            {
+                "data" : "90"
+            }
+            ], 
+            "keepalive-interval" : [
+            {
+                "data" : "30"
+            }
+            ], 
+            "group-index" : [
+            {
+                "data" : "0"
+            }
+            ], 
+            "peer-index" : [
+            {
+                "data" : "0"
+            }
+            ], 
+            "snmp-index" : [
+            {
+                "data" : "0"
+            }
+            ], 
+            "bgp-peer-iosession" : [
+            {
+                "iosession-thread-name" : [
+                {
+                    "data" : "bgpio-0"
+                }
+                ], 
+                "iosession-state" : [
+                {
+                    "data" : "Enabled"
+                }
+                ]
+            }
+            ], 
+            "bgp-bfd" : [
+            {
+                "bfd-configuration-state" : [
+                {
+                    "data" : "disabled"
+                }
+                ], 
+                "bfd-operational-state" : [
+                {
+                    "data" : "down"
+                }
+                ]
+            }
+            ], 
+            "peer-restart-nlri-configured" : [
+            {
+                "data" : "inet-unicast"
+            }
+            ], 
+            "nlri-type-peer" : [
+            {
+                "data" : "inet-unicast"
+            }
+            ], 
+            "nlri-type-session" : [
+            {
+                "data" : "inet-unicast"
+            }
+            ], 
+            "peer-refresh-capability" : [
+            {
+                "data" : "2"
+            }
+            ], 
+            "peer-stale-route-time-configured" : [
+            {
+                "data" : "300"
+            }
+            ], 
+            "peer-no-restart" : [
+            {
+                "data" : [null]
+            }
+            ], 
+            "peer-restart-nlri-negotiated" : [
+            {
+            }
+            ], 
+            "peer-end-of-rib-received" : [
+            {
+                "data" : "inet-unicast"
+            }
+            ], 
+            "peer-end-of-rib-sent" : [
+            {
+                "data" : "inet-unicast"
+            }
+            ], 
+            "peer-end-of-rib-scheduled" : [
+            {
+            }
+            ], 
+            "peer-no-helper" : [
+            {
+                "data" : [null]
+            }
+            ], 
+            "peer-no-llgr-helper" : [
+            {
+                "data" : [null]
+            }
+            ], 
+            "peer-4byte-as-capability-advertised" : [
+            {
+                "data" : "64500"
+            }
+            ], 
+            "peer-addpath-not-supported" : [
+            {
+                "data" : [null]
+            }
+            ], 
+            "peer-ext-nh-nlri" : [
+            {
+                "data" : "inet-unicast inet-multicast inet-vpn-unicast"
+            }
+            ], 
+            "local-ext-nh-color-nlri" : [
+            {
+                "data" : "inet-unicast"
+            }
+            ], 
+            "bgp-rib" : [
+            {
+                "attributes" : {"junos:style" : "detail"}, 
+                "name" : [
+                {
+                    "data" : "inet.0"
+                }
+                ], 
+                "rib-bit" : [
+                {
+                    "data" : "20000"
+                }
+                ], 
+                "bgp-rib-state" : [
+                {
+                    "data" : "BGP restart is complete"
+                }
+                ], 
+                "send-state" : [
+                {
+                    "data" : "in sync"
+                }
+                ], 
+                "active-prefix-count" : [
+                {
+                    "data" : "1"
+                }
+                ], 
+                "received-prefix-count" : [
+                {
+                    "data" : "5"
+                }
+                ], 
+                "accepted-prefix-count" : [
+                {
+                    "data" : "5"
+                }
+                ], 
+                "suppressed-prefix-count" : [
+                {
+                    "data" : "0"
+                }
+                ], 
+                "advertised-prefix-count" : [
+                {
+                    "data" : "5"
+                }
+                ]
+            }
+            ], 
+            "last-received" : [
+            {
+                "data" : "25"
+            }
+            ], 
+            "last-sent" : [
+            {
+                "data" : "8"
+            }
+            ], 
+            "last-checked" : [
+            {
+                "data" : "9930"
+            }
+            ], 
+            "input-messages" : [
+            {
+                "data" : "334"
+            }
+            ], 
+            "input-updates" : [
+            {
+                "data" : "2"
+            }
+            ], 
+            "input-refreshes" : [
+            {
+                "data" : "0"
+            }
+            ], 
+            "input-octets" : [
+            {
+                "data" : "6458"
+            }
+            ], 
+            "output-messages" : [
+            {
+                "data" : "370"
+            }
+            ], 
+            "output-updates" : [
+            {
+                "data" : "1"
+            }
+            ], 
+            "output-refreshes" : [
+            {
+                "data" : "0"
+            }
+            ], 
+            "output-octets" : [
+            {
+                "data" : "7079"
+            }
+            ], 
+            "bgp-output-queue" : [
+            {
+                "number" : [
+                {
+                    "data" : "1"
+                }
+                ], 
+                "count" : [
+                {
+                    "data" : "0"
+                }
+                ], 
+                "table-name" : [
+                {
+                    "data" : "inet.0"
+                }
+                ], 
+                "rib-adv-nlri" : [
+                {
+                    "data" : "inet-unicast"
+                }
+                ]
+            }
+            ]
+        }
+        ]
+    }
+    ]
+}
+
+clab@juniper1> 
+DEBUG:netmiko:Pattern found: (show\ bgp\ neighbor\ \|\ display\ json) show bgp neighbor | display json
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+
+clab@juniper1> 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is clab@juniper1>
+DEBUG:netmiko:write_channel: b'show configuration interfaces | display json\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: show configuration interfaces | display json 
+{
+    "configuration" : {
+        "@" : {
+            "junos:commit-seconds" : "1683239375", 
+            "junos:commit-localtime" : "2023-05-04 22:29:35 UTC", 
+            "junos:commit-user" : "root"
+        }, 
+        "interfaces" : {
+            "interface" : [
+            {
+                "name" : "eth1", 
+                "description" : "foobar", 
+                "unit" : [
+                {
+                    "name" : 0, 
+                    "family" : {
+                        "inet" : {
+                            "address" : [
+                            {
+                                "name" : "172.17.1.17/31"
+                            }
+                            ]
+                        }
+                    }
+                }, 
+                {
+                    "name" : 100, 
+                    "description" : "foo", 
+                    "vlan-id" : 100, 
+                    "family" : {
+                        "inet" : {
+                            "address" : [
+                            {
+                                "name" : "198.51.100.2/24"
+                            }
+                            ]
+                        }
+                    }
+                }, 
+                {
+                    "name" : 200, 
+                    "description" : "foo", 
+                    "vlan-id" : 200, 
+                    "family" : {
+                        "inet" : {
+                            "address" : [
+                            {
+                                "name" : "192.0.2.2/24"
+                            }
+                            ]
+                        }
+                    }
+                }
+                ]
+            }, 
+            {
+                "name" : "eth2", 
+                "unit" : [
+                {
+                    "name" : 0, 
+                    "description" : "EXAMPLE_NETWORK", 
+                    "family" : {
+                        "inet" : {
+                            "address" : [
+                            {
+                                "name" : "10.0.2.1/24"
+                            }
+                            ]
+                        }
+                    }
+                }
+                ]
+            }
+            ]
+        }
+    }
+}
+
+clab@juniper1> 
+DEBUG:netmiko:Pattern found: (show\ configuration\ interfaces\ \|\ display\ json) show configuration interfaces | display json
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+clab@juniper1> 
+DEBUG:netmiko:Pattern found: ((?m:[>#] $)) 
+
+clab@juniper1> 
+DEBUG:netmiko:write_channel: b'exit\n'
+DEBUG:paramiko.transport:EOF in transport thread
