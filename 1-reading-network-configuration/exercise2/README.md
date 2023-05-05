@@ -8,7 +8,7 @@ To complete this exercise, all TODOs must be completed in both scripts and one i
 - 2_add_customers_to_interfaces.py
 - hosts.yaml
 
-If done successfully, both scripts can be run in sequential order.
+If done successfully, both scripts can be run in sequential order. They will output results as they run.
 
 ```
 python 1_create_network_structured_data.py
